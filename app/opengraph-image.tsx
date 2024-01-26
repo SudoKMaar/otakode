@@ -25,7 +25,7 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          backgroundImage: "url('https://OtaKode.vercel.app/og.png')",
+          backgroundImage: "url('https://otakode.vercel.app/og.png')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           fontSize: 60,
