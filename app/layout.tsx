@@ -17,6 +17,17 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  openGraph: {
+    type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "OtaKode",
+      },
+    ],
+  },
   verification: {
     google: "w3roI87t-dIyKe7ReAdSWUVpWCe7K1pP_EXUidsZ3xI",
     me: "KMaar",
