@@ -2,14 +2,15 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import AnimeCard, { AnimeProp } from "@/components/anime-card";
+import AnimeCard from "@/components/anime-card";
 import { fetchAnime } from "@/app/action";
 
 let page = 2;
+export type AnimeCard = JSX.Element;
 
 function LoadMore() {
   const { ref, inView } = useInView();
-  const [data, setData] = useState<AnimeProp[]>([]);
+  const [data, setData] = useState<AnimeCard[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     if (inView) {
@@ -29,9 +30,7 @@ function LoadMore() {
   return (
     <>
       <section className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
-        {data.map((item: AnimeProp, index: number) => (
-          <AnimeCard key={item.id} anime={item} index={index} />
-        ))}
+        {data}
       </section>
       <section className="flex justify-center items-center w-full">
         <div ref={ref}>
