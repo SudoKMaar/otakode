@@ -6,6 +6,7 @@ import AnimeCard from "@/components/anime-card";
 import { fetchAnime } from "@/app/action";
 
 let page = 2;
+
 export type AnimeCard = JSX.Element;
 
 function LoadMore() {
