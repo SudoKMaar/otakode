@@ -8,6 +8,7 @@ import Hero from "@/components/hero";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://otakode.vercel.app"),
   title: {
     default: "OtaKode",
     template: "%s - OtaKode",
