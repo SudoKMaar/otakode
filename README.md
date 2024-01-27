@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# OtaKode - Your Ultimate Anime Destination
 
-## Getting Started
+Welcome to OtaKode, the ultimate destination for anime fans. Whether you are looking for the latest anime news, reviews, recommendations, or a vibrant community, OtaKode has it all. Explore our extensive database of anime titles, genres, ratings, and more.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Animations](#animations)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+OtaKode is a Next.js project that brings together anime enthusiasts to discover, explore, and enjoy their favorite anime titles. The project is designed to be visually appealing, responsive, and user-friendly.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Anime Card Display:** Explore a curated list of anime titles with detailed information.
+- **Infinite Scroll:** Load more anime titles as you scroll down, providing a seamless browsing experience.
+- **Hero Section:** A captivating hero section with the Otakode logo and mascot, welcoming users to the platform.
+- **404 Page:** A custom 404 error page with a visually appealing design, guiding users back to the homepage.
+- **Metadata and SEO:** Optimize your website for search engines with metadata and sitemap functionalities.
+- **Footer:** A comprehensive footer section with copyright information and links to social media profiles.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run the OtaKode project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/SudoKMaar/otakode.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   cd otakode
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:3000` to view OtaKode locally.
+
+## Usage
+
+Once the project is set up, you can explore anime titles, enjoy the hero section, and navigate through the user-friendly interface. The infinite scroll feature allows you to discover more anime titles effortlessly.
+
+## Components
+
+### Anime Card
+
+The `AnimeCard` component is responsible for displaying detailed information about an anime title. It includes animations for a smooth and visually appealing user experience.
+
+### Hero
+
+The `Hero` component represents the hero section of the website, featuring the Otakode logo, a captivating title, and an image of the Otakode mascot.
+
+### LoadMore
+
+The `LoadMore` component handles the infinite scroll functionality, dynamically loading additional anime cards as the user scrolls down the page.
+
+### Footer
+
+The `Footer` component provides comprehensive information, including copyright details, a link to the creator's portfolio, and social media links.
+
+## Animations
+
+OtaKode utilizes the Framer Motion library for animations. The `MotionDiv` component simplifies the application of motion effects to various elements.
+
+## Contributing
+
+Contributions to OtaKode are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Thank you for choosing OtaKode. We hope you enjoy using it!
